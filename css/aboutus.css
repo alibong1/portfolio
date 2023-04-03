@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    color: white;
+}
+
+body {
+    width: 100%;
+    height: 200vh;
+    background-image: url(../images/er.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: dashed;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 100%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #183153;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: none;
+   }
+   
+   .button:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #FFD401;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+   }
+   
+   .button:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+   }
+   
+   .button span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 18px 25px;
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   .button:hover span {
+    color: #183153;
+    animation: scaleUp 0.3s ease-in-out;
+   }
+   
+   @keyframes scaleUp {
+    0% {
+     transform: scale(1);
+    }
+   
+    50% {
+     transform: scale(0.95);
+    }
+   
+    100% {
+     transform: scale(1);
+    }
+   }
+
+.header {
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(135deg, rgba(197, 193, 193, 0.507), rgba(250, 240, 240, 0.733));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border:1 solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(255, 254, 254, 0.781);
+    margin-top: 50px;
+}
+
+.headers {
+    margin: 20px;
+    padding-right: 10px;
+}
+
+.personal-info {
+    display: flex;
+}
+
+.ph {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    margin-right: 20px;
+}
+
+.basta {
+    margin-left: 25px;
+}
+
+.schoolyear {
+    display: flex;
+    justify-content: space-between;
+}
+
+.character {
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+/* .reference{
+    margin-left: -50px;
+} */
+/* .contact{
+    margin-left:-50px;
+} */
+.educcharcon{
+    margin-left: -200px;
+}
+
+
+.educational{
+    margin-left: -50px;
+}
+.facebook{
+    margin-top: 25px;
+}
