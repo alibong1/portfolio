@@ -145,4 +145,14 @@ to{
      transform: scale(1);
     }
    }
+footer{
+    background-color: #1e3f99;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+    right: 0;
+   }
    
