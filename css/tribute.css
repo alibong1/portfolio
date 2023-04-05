@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+}
+
+header {
+  background-color: #0d47a1;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 48px;
+}
+
+header p {
+  margin: 0;
+  font-size: 24px;
+}
+
+main {
+  max-width:800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  margin-top: 40px;
+  color: #ccc;
+}
+.container{
+  width: 90%;
+  padding: 20px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+.column{
+width: 400px; 
+margin: 0 10px;
+box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+transition: 1s;
+}
+.column img{
+display: block;
+width: 100%;
+border-radius: 10px;
+}
+
+.column:hover{
+transform:scale(1.3);
+z-index:2;
+}
+.button{
+text-decoration: none;
+position: relative;
+border: none;
+font-size: 40px;
+font-family: inherit;
+color: #fff;
+width: 9em;
+height: 3em;
+line-height: 2em;
+text-align: center;
+background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+background-size: 300%;
+border-radius: 30px;
+z-index: 1;
+}
+button:hover {
+animation: ani 8s linear infinite;
+border: none;
+}
+
+
+
+.button:before {
+content: '';
+position: absolute;
+top: -5px;
+left: -5px;
+right: -5px;
+bottom: -5px;
+z-index: -1;
+background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+background-size: 400%;
+border-radius: 35px;
+transition: 1s;
+}
+
+.button:hover::before {
+filter: blur(20px);
+}
+
+.button:active {
+background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+}

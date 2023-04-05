@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins',sans-serif;  
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background:rgb(212, 194, 192);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    font-size: 40px;
+    margin-bottom: 50px;
+    margin-top: -500px;
+}
+.social-links{
+    display: flex;
+}
+.social-links a{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    margin: 0 30px;
+    border-radius: 50%;
+}
+.social-links a .fa-brands{
+    font-size: 30px;
+    line-height: 80px;
+}
+.abi {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -200px;
+}   
+.abisocial{
+    display: flex;
+}
+.abisocial a{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    margin: 0 30px;
+    border-radius: 50%;
+}
+.abisocial a .fa-brands{
+    font-size: 30px;
+    line-height: 80px;
+}   
+
+.abis{
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.2s;
+    text-decoration: none;
+    margin-top: -100px;
+    padding: 0;
+    margin-left: 670px;
+    width: 200px;
+    color: black;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.abis:hover{
+    border-radius: 100px;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #45c3c7, 0 0 80px #e45d4c;}
